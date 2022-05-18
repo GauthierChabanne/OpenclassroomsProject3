@@ -1,0 +1,22 @@
+footer {
+  background-color: #353535;
+  color: white;
+  height: 14rem;
+
+  & .footer {
+    margin-left: 1rem;
+
+    & i {
+      margin-right: 0.5rem;
+    }
+
+    & svg {
+      width: 7rem;
+      margin: 1rem 0;
+    }
+
+    & p {
+      margin: 0.5rem 0 1rem;
+    }
+  }
+}

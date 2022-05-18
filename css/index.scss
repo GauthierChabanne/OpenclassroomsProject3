@@ -1,0 +1,14 @@
+@import 'assets/index';
+@import 'pages/index';
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #9AE2D0;
+
+$font-title: 'Shrikhand',cursive;
+$font-text: 'Roboto', sans-serif;
+
+body {
+  margin: 0 auto;
+  font-family: $font-text;
+}

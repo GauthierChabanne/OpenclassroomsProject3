@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  position: relative;
+
+  & img {
+    width: 9rem;
+  }
+
+  & a {
+    position: absolute;
+    left: 2rem;
+    color: black;
+  }
+}

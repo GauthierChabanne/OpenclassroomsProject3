@@ -1,0 +1,71 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  position: relative;
+}
+
+.header img {
+  width: 9rem;
+}
+
+.header a {
+  position: absolute;
+  left: 2rem;
+  color: black;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  background-color: #EAEAEA;
+}
+
+.navbar p, .navbar i {
+  color: #282827;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.navbar p {
+  margin-left: 1rem;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  height: 14rem;
+}
+
+footer .footer {
+  margin-left: 1rem;
+}
+
+footer .footer i {
+  margin-right: 0.5rem;
+}
+
+footer .footer svg {
+  width: 7rem;
+  margin: 1rem 0;
+}
+
+footer .footer p {
+  margin: 0.5rem 0 1rem;
+}
+/*# sourceMappingURL=index.css.map */
