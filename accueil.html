@@ -31,87 +31,114 @@
     <p>Paris, Belleville</p>
   </nav>
 
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
   <main class="accueil-main">
     <article class="reservation">
       <h2>Réservez le menu qui vous convient</h2>
       <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-      <button>Explorer nos restaurants</button>
+      <button class="main_button">Explorer nos restaurants</button>
     </article>
 
     <section class="fonctionnement">
       <h2>Fonctionnement</h2>
 
-      <article class="fcard">
-        <div class="fnumber">1</div>
-        <i class=" ficone fa-solid fa-mobile-screen-button"></i>
+      <article class="fonctionnement__card">
+        <div class="fonctionnement__card-number">1</div>
+        <i class=" fonctionnement__card-icon fa-solid fa-mobile-screen-button"></i>
         <p>Choisissez un restaurant</p>
       </article>
 
-      <article class="fcard">
-        <div class="fnumber">2</div>
-        <i class="ficone fa-solid fa-list"></i>
+      <article class="fonctionnement__card">
+        <div class="fonctionnement__card-number">2</div>
+        <i class="fonctionnement__card-icon fa-solid fa-list"></i>
         <p>Composez votre menu</p>
       </article>
 
-      <article class="fcard">
-        <div class="fnumber">3</div>
-        <i class="ficone fa-solid fa-store"></i>
+      <article class="fonctionnement__card">
+        <div class="fonctionnement__card-number">3</div>
+        <i class="fonctionnement__card-icon fa-solid fa-store"></i>
         <p>Dégustez au restaurant</p>
       </article>
     </section>
 
     <section class="restaurants">
         <h3>Restaurants</h3>
-        <a href="">
-          <article class="rcard">
-            <div class="nouveau">Nouveau</div>
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="a nice looking salad">
-            <div class="rinfos">
-              <header class="rnames">
-                <h4>La palette du goût</h4>
-                <p>Ménilmontant</p>
-              </header>
-              <i class="rheart fa-regular fa-heart"></i>
-            </div>
-          </article>
-        </a>
-        <a href="">
-          <article class="rcard">
-            <div class="nouveau">Nouveau</div>
-            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="fish with plenty of vegetables">
-            <div class="rinfos">
-              <header class="rnames">
-                <h4>La note enchantée</h4>
-                <p>Charonne</p>
-              </header>
-              <i class="rheart fa-regular fa-heart"></i>
-            </div>
-          </article>
-        </a>
-        <a href="">
-          <article class="rcard">
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A dessert with some icecream">
-            <div class="rinfos">
-              <header class="rnames">
-                <h4>A la française</h4>
-                <p>Cité Rouge</p>
-              </header>
-              <i class="rheart fa-regular fa-heart"></i>
-            </div>
-          </article>
-        </a>
-        <a href="">
-          <article class="rcard">
-            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="A nice fish with plenty of sauce">
-            <div class="rinfos">
-              <header class="rnames">
-                <h4>Le délice des sens</h4>
-                <p>Folie-Méricourt</p>
-              </header>
-              <i class="rheart fa-regular fa-heart"></i>
-            </div>
-          </article>
-        </a>
+        <div class="restaurant__card">
+          <a href="">
+            <article class="restaurant__card-content">
+              <div class="restaurant__card-nouveau">Nouveau</div>
+              <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="a nice looking salad">
+              <div class="restaurant__card-infos">
+                <header class="restaurant__card-names">
+                  <h4>La palette du goût</h4>
+                  <p>Ménilmontant</p>
+                </header>
+              </div>
+            </article>
+          </a>
+          <button class="restaurant__card-heartbutton heartbutton">
+            <i class="heart fa-regular fa-heart"></i>
+          </button>
+        </div>
+        <div class="restaurant__card">
+          <a href="">
+            <article class="restaurant__card-content">
+              <div class="restaurant__card-nouveau">Nouveau</div>
+              <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="fish with plenty of vegetables">
+              <div class="restaurant__card-infos">
+                <header class="restaurant__card-names">
+                  <h4>La note enchantée</h4>
+                  <p>Charonne</p>
+                </header>
+              </div>
+            </article>
+          </a>
+          <button class="restaurant__card-heartbutton heartbutton">
+            <i class="heart fa-regular fa-heart"></i>
+          </button>
+        </div>
+        <div class="restaurant__card">
+          <a href="">
+            <article class="restaurant__card-content">
+              <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A dessert with some icecream">
+              <div class="restaurant__card-infos">
+                <header class="restaurant__card-names">
+                  <h4>A la française</h4>
+                  <p>Cité Rouge</p>
+                </header>
+              </div>
+            </article>
+          </a>
+          <button class="restaurant__card-heartbutton heartbutton">
+            <i class="heart fa-regular fa-heart"></i>
+          </button>
+        </div>
+        <div class="restaurant__card">
+          <a href="">
+            <article class="restaurant__card-content">
+              <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="A nice fish with plenty of sauce">
+              <div class="restaurant__card-infos">
+                <header class="restaurant__card-names">
+                  <h4>Le délice des sens</h4>
+                  <p>Folie-Méricourt</p>
+                </header>
+            </article>
+          </a>
+          <button class="restaurant__card-heartbutton heartbutton">
+            <i class="heart fa-regular fa-heart"></i>
+          </button>
+          </div>
+        </div>
     </section>
   </main>
   <footer>

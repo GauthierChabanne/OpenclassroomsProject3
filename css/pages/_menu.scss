@@ -1,18 +1,169 @@
-.menu-img {
-  width: 100%;
-}
-
 .menu {
   position: relative;
 
-  & .container {
-    background-color: #F6F6F7;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
+  & .menu__img {
+    width: 100%;
+  }
 
-    & h3 {
-      margin-top: 0;
+  & .menu__container {
+    background-color: #F6F6F7;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 100;
+
+    & .menu__container-title {
+      font-family: 'Shrikhand', cursive;;
+      display: flex;
+      margin: 2rem 0 0 1rem;
+
+      & .menu__container-title__button {
+        margin-left: 4rem;
+      }
     }
+
+    & .menu__part {
+      margin: 1rem 0 2rem 1rem;
+
+      & .menu__part__title {
+
+        & h3 {
+          font-size: 1rem;
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        & .menu__part__title-border {
+          width: 15%;
+          margin: 0 0;
+          border-bottom: 3px solid #99E2D0;
+        }
+      }
+
+      & .menu__part-item {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 0.5rem 1rem 1rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        & .menu__part-item__card {
+          padding: 1rem 0.5rem 0.5rem
+        }
+
+        & .checkdiv {
+          background-color: #99E2D0;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 0;
+
+          & i {
+            visibility: hidden;
+          }
+
+        }
+
+        &:hover .menu__part-item__infos {
+          animation: diminish 1s;
+          animation-fill-mode: forwards;
+        }
+
+        &:hover .checkdiv {
+          animation: check 1s;
+          animation-fill-mode: forwards;
+
+          & i {
+            animation: roll 1s;
+            visibility: visible;
+          }
+        }
+
+        & h3 {
+          font-size: 1rem;
+          font-weight: 500;
+          margin: 0;
+        }
+
+        & .menu__part-item__infos {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 17rem;
+
+
+          & p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 0.5rem 0;
+            font-size: 0.8rem;
+            font-weight: 300;
+          }
+
+          & span {
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    & .menu__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+#entrees {
+  animation: fadein 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#plats {
+  animation: fadein 3s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#desserts {
+  animation: fadein 3s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes check {
+  from { width: 0; }
+  to { width: 4rem;}
+}
+
+@keyframes diminish {
+  from { width: 17rem; }
+  to { width: 15rem;}
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
