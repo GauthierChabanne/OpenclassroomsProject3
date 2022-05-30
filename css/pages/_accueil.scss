@@ -1,10 +1,12 @@
-.accueil-main{
+.main {
   animation: showAnimation 0s ease-in 3s;
   animation-fill-mode: forwards;
   visibility: hidden;
   width: 0;
   height: 0;
+}
 
+.accueil-main{
   & .reservation {
     background-color: #F7F6F6;
     text-align: center;
@@ -134,15 +136,22 @@
   }
 }
 
+.loader {
+  width: 100%;
+  height: 60rem;
+  background: #99E2D0 !important;
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .lds-roller {
     display: inline-block;
-    position: relative;
-    top: 3rem;
+    position: absolute;
+    top: 30%;
     left: 45%;
-    width:  100%;
-    height: 15rem;
-    animation: hideAnimation 0s ease-in 3s;
-    animation-fill-mode: forwards;
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -156,7 +165,6 @@
   height: 10px;
   border-radius: 50%;
   background: #9556DC;
-  margin: 1rem;
 }
 .lds-roller div:nth-child(1) {
   animation-delay: -0.036s;

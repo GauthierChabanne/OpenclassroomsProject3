@@ -1,4 +1,4 @@
-.accueil-main {
+.main {
   -webkit-animation: showAnimation 0s ease-in 3s;
           animation: showAnimation 0s ease-in 3s;
   -webkit-animation-fill-mode: forwards;
@@ -153,17 +153,24 @@
   right: -17rem;
 }
 
-.lds-roller {
-  display: inline-block;
-  position: relative;
-  top: 3rem;
-  left: 45%;
+.loader {
   width: 100%;
-  height: 15rem;
+  height: 60rem;
+  background: #99E2D0 !important;
   -webkit-animation: hideAnimation 0s ease-in 3s;
           animation: hideAnimation 0s ease-in 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 45%;
 }
 
 .lds-roller div {
@@ -181,7 +188,6 @@
   height: 10px;
   border-radius: 50%;
   background: #9556DC;
-  margin: 1rem;
 }
 
 .lds-roller div:nth-child(1) {
