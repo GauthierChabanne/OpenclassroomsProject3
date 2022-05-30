@@ -20,3 +20,22 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+
+  footer {
+    & .footer {
+      text-align: center;
+
+      & svg {
+        width: 11rem;
+      }
+
+      & .footer__mentions {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

@@ -46,6 +46,7 @@
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 4rem;
+  position: relative;
 }
 
 .accueil-main .fonctionnement .fonctionnement__card .fonctionnement__card-icon {
@@ -68,7 +69,7 @@
   border-radius: 50%;
   padding: 3px 7px;
   position: absolute;
-  left: 20px;
+  left: -5px;
   font-size: 14px;
 }
 
@@ -155,8 +156,8 @@
 .lds-roller {
   display: inline-block;
   position: relative;
-  top: 5rem;
-  left: 7rem;
+  top: 3rem;
+  left: 45%;
   width: 100%;
   height: 15rem;
   -webkit-animation: hideAnimation 0s ease-in 3s;
@@ -335,12 +336,51 @@
   }
 }
 
+@media screen and (min-width: 500px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .fonctionnement .fonctionnement__cards .fonctionnement__card {
+    width: 17rem;
+  }
+  .restaurants h3 {
+    text-align: center;
+    font-size: x-large;
+  }
+  .restaurants .restaurants__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .restaurants .restaurants__cards .restaurant__card {
+    width: 21rem;
+    margin: 0 1rem;
+  }
+}
+
 .menu {
   position: relative;
 }
 
 .menu .menu__img {
   width: 100%;
+  height: 22rem;
 }
 
 .menu .menu__container {
@@ -399,6 +439,12 @@
 
 .menu .menu__container .menu__part .menu__part-item .menu__part-item__card {
   padding: 1rem 0.5rem 0.5rem;
+}
+
+.menu .menu__container .menu__part .menu__part-item .menu__part-item__card h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu .menu__container .menu__part .menu__part-item .checkdiv {
@@ -587,6 +633,35 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+/* Desktop and Tablet CSS */
+@media screen and (min-width: 500px) {
+  .menu .menu__img {
+    width: 70%;
+    position: relative;
+    left: 19%;
+    border-radius: 10px;
+    height: auto;
+  }
+  .menu .menu__container-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu .menu__container-title h3 {
+    font-size: 2rem;
+  }
+  .menu .menu__parts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=index.css.map */

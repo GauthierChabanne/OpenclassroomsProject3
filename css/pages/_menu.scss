@@ -3,6 +3,7 @@
 
   & .menu__img {
     width: 100%;
+    height: 22rem;
   }
 
   & .menu__container {
@@ -53,7 +54,13 @@
         justify-content: space-between;
 
         & .menu__part-item__card {
-          padding: 1rem 0.5rem 0.5rem
+          padding: 1rem 0.5rem 0.5rem;
+
+          & h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
         }
 
         & .checkdiv {
@@ -165,5 +172,35 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* Desktop and Tablet CSS */
+
+@media screen and (min-width: 500px) {
+
+  .menu {
+
+    & .menu__img {
+      width: 70%;
+      position: relative;
+      left: 19%;
+      border-radius: 10px;
+      height: auto;
+    }
+
+    & .menu__container-title {
+      justify-content: center;
+
+      & h3 {
+        font-size: 2rem;
+      }
+    }
+
+    & .menu__parts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

@@ -34,6 +34,7 @@
         margin: 1rem;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         height: 4rem;
+        position:relative;
 
       & .fonctionnement__card-icon {
           margin-right: 1rem;
@@ -55,7 +56,7 @@
             border-radius: 50%;
             padding: 3px 7px;
             position: absolute;
-            left: 20px;
+            left: -5px;
             font-size: 14px;
           }
     }
@@ -136,8 +137,8 @@
 .lds-roller {
     display: inline-block;
     position: relative;
-    top: 5rem;
-    left: 7rem;
+    top: 3rem;
+    left: 45%;
     width:  100%;
     height: 15rem;
     animation: hideAnimation 0s ease-in 3s;
@@ -246,5 +247,43 @@
 
   100% {
     opacity: 1
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .fonctionnement {
+    & h2 {
+      text-align: center;
+    }
+
+    & .fonctionnement__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      & .fonctionnement__card {
+        width: 17rem;
+      }
+    }
+  }
+
+  .restaurants {
+
+    & h3 {
+      text-align: center;
+      font-size: x-large;
+    }
+
+    & .restaurants__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & .restaurant__card {
+        width: 21rem;
+        margin: 0 1rem;
+      }
+    }
   }
 }

@@ -69,6 +69,24 @@ footer .footer p {
   margin: 0.5rem 0 1rem;
 }
 
+@media screen and (min-width: 500px) {
+  footer .footer {
+    text-align: center;
+  }
+  footer .footer svg {
+    width: 11rem;
+  }
+  footer .footer .footer__mentions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+}
+
 .main_button {
   color: white;
   background-color: #C364DB;
