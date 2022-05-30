@@ -37,6 +37,7 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         height: 4rem;
         position:relative;
+        cursor: pointer;
 
       & .fonctionnement__card-icon {
           margin-right: 1rem;
@@ -75,8 +76,13 @@
         color: black;
         text-decoration: none;
 
+        &:hover .restaurant__card-content {
+          background-color: #F4EDFF;;
+        }
+
         & .restaurant__card-content {
           background-color: white;
+          cursor: pointer;
           border-radius: 30px;
           box-shadow: 5px 5px 5px #E9E9E8;
           margin-bottom: 20px;

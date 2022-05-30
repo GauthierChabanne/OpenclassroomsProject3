@@ -18,6 +18,15 @@ footer {
     & p {
       margin: 0.5rem 0 1rem;
     }
+
+    & a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
   }
 }
 
@@ -31,7 +40,7 @@ footer {
         width: 11rem;
       }
 
-      & .footer__mentions {
+      &__mentions {
         display: flex;
         justify-content: space-evenly;
         margin-top: 2rem;
