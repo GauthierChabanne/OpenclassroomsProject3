@@ -47,15 +47,17 @@
 
       & .menu__part-item {
         background-color: white;
-        border-radius: 10px;
+        border-radius: 15px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         margin: 0.5rem 1rem 1rem 0;
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+        width: 21rem;
 
         & .menu__part-item__card {
           padding: 1rem 0.5rem 0.5rem;
+          width: 100%;
 
           & h3 {
             overflow: hidden;
@@ -71,6 +73,8 @@
           align-items: center;
           justify-content: center;
           width: 0;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
 
           & i {
             visibility: hidden;
@@ -78,7 +82,7 @@
 
         }
 
-        &:hover .menu__part-item__infos {
+        &:hover .menu__part-item__card {
           animation: diminish 1s;
           animation-fill-mode: forwards;
         }
@@ -103,7 +107,6 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          width: 17rem;
 
 
           & p {
@@ -159,12 +162,12 @@
 
 @keyframes check {
   from { width: 0; }
-  to { width: 4rem;}
+  to { width: 20%;}
 }
 
 @keyframes diminish {
-  from { width: 17rem; }
-  to { width: 15rem;}
+  from { width: 100%; }
+  to { width: 80%;}
 }
 
 @keyframes roll {

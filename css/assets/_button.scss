@@ -1,7 +1,7 @@
 .main_button {
   color: white;
   background-color:#C364DB;
-  background: linear-gradient((174deg, rgba(251, 171, 251, 1) 0%, rgba(201, 116, 190, 1) 38%, rgba(168, 78, 171, 1) 100%));
+    background: linear-gradient((174deg, rgb(238, 129, 238) 0%, rgb(195, 89, 181) 38%, rgb(145, 55, 148) 100%));
   padding: 1rem;
   border-radius: 30px;
   border: none;
@@ -15,7 +15,7 @@
       rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px,
       rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: linear-gradient((174deg, rgb(238, 129, 238) 0%, rgb(195, 89, 181) 38%, rgb(145, 55, 148) 100%));
+    background: linear-gradient((174deg, rgba(251, 171, 251, 1) 0%, rgba(201, 116, 190, 1) 38%, rgba(168, 78, 171, 1) 100%));
 
   }
 }
